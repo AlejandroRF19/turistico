@@ -1,0 +1,175 @@
+﻿@{
+    ViewBag.Title = "Opiniones y Reseñas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <!-- TÍTULO -->
+    <h2 class="fw-bold text-success mb-3">Opiniones y Reseñas</h2>
+    <p class="text-muted fs-5 mb-5">
+        Comentarios y valoraciones de usuarios sobre comercios, eventos y actividades turísticas.
+    </p>
+
+    <!-- LISTADO DE RESEÑAS -->
+    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+        <!-- RESEÑA 1 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="fw-bold">Hotel Mirador Verde</h5>
+                    <p class="text-success fs-5 mb-1">★★★★★</p>
+                    <p class="fs-6">
+                        Excelente atención y una vista espectacular. Muy recomendado para turistas.
+                    </p>
+                    <small class="text-muted">
+                        👤 Juan Pérez · 📅 Agosto 2025
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESEÑA 2 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="fw-bold">Feria Gastronómica</h5>
+                    <p class="text-success fs-5 mb-1">★★★★☆</p>
+                    <p class="fs-6">
+                        Muy buena variedad de comidas y ambiente familiar.
+                    </p>
+                    <small class="text-muted">
+                        👤 María González · 📅 Septiembre 2025
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESEÑA 3 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="fw-bold">Caminata Ecológica Guiada</h5>
+                    <p class="text-success fs-5 mb-1">★★★★★</p>
+                    <p class="fs-6">
+                        Experiencia increíble, muy organizada y educativa.
+                    </p>
+                    <small class="text-muted">
+                        👤 Carlos Rodríguez · 📅 Octubre 2025
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESEÑA 4 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="fw-bold">Restaurante Sabores Típicos</h5>
+                    <p class="text-success fs-5 mb-1">★★★★☆</p>
+                    <p class="fs-6">
+                        Comida deliciosa y buen servicio, aunque el lugar se llena rápido.
+                    </p>
+                    <small class="text-muted">
+                        👤 Ana Morales · 📅 Noviembre 2025
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESEÑA 5 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="fw-bold">Festival Cultural Municipal</h5>
+                    <p class="text-success fs-5 mb-1">★★★★★</p>
+                    <p class="fs-6">
+                        Excelente organización y actividades para toda la familia.
+                    </p>
+                    <small class="text-muted">
+                        👤 Luis Fernández · 📅 Diciembre 2025
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESEÑA 6 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="fw-bold">Café Montaña Verde</h5>
+                    <p class="text-success fs-5 mb-1">★★★★★</p>
+                    <p class="fs-6">
+                        Ambiente acogedor y excelente café artesanal.
+                    </p>
+                    <small class="text-muted">
+                        👤 Sofía Ramírez · 📅 Enero 2026
+                    </small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FORMULARIO DE RESEÑA -->
+    <div class="mt-5 p-4 rounded shadow-sm border"
+         style="background-color:#e8f5e9; border-color:#66bb6a;">
+
+        <h4 class="fw-bold text-success mb-3">Dejá tu opinión</h4>
+
+        <form>
+
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" placeholder="Tu nombre">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Tipo de servicio</label>
+                <select class="form-select">
+                    <option selected disabled>Seleccioná una opción</option>
+                    <option>Restaurante</option>
+                    <option>Hotel</option>
+                    <option>Evento</option>
+                    <option>Actividad turística</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Restaurante / Hotel / Evento</label>
+                <select class="form-select">
+                    <option selected disabled>Seleccioná el lugar o actividad</option>
+                    <option>Hotel Mirador Verde</option>
+                    <option>Restaurante Sabores Típicos</option>
+                    <option>Café Montaña Verde</option>
+                    <option>Festival Cultural Municipal</option>
+                    <option>Feria Gastronómica</option>
+                    <option>Caminata Ecológica Guiada</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Calificación</label>
+                <select class="form-select">
+                    <option>★★★★★ Excelente</option>
+                    <option>★★★★☆ Muy bueno</option>
+                    <option>★★★☆☆ Bueno</option>
+                    <option>★★☆☆☆ Regular</option>
+                    <option>★☆☆☆☆ Malo</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Comentario</label>
+                <textarea class="form-control" rows="3" placeholder="Escribí tu opinión"></textarea>
+            </div>
+
+            <button type="button" class="btn btn-success">
+                Enviar reseña
+            </button>
+
+        </form>
+    </div>
+
+</div>
